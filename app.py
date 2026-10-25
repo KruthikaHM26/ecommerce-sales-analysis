@@ -197,6 +197,7 @@ if uploaded_file is not None:
 
             # Data table
             st.subheader("📋 Analyzed Sales Data")
+            filtered_df.columns=filtered_df.columns.str.strip()
             st.dataframe(filtered_df, use_container_width=True)
 
             # Download button
